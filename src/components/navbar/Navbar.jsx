@@ -11,7 +11,7 @@ const Navbar = () => {
                         <Image src="/logo.png" width={80} height={80} />
                     </Link>
                 </div>
-                <ul className="font-semibold hidden gap-10">
+                <ul className="font-semibold flex gap-10">
                     <li>
                         <Link
                             href="/"
