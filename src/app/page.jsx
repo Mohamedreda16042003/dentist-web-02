@@ -1,54 +1,16 @@
-"use client";
 import Image from "next/image";
 import HeroImg from "@/components/HeroImg";
-import { useEffect, useRef } from "react";
+
+import TitleHero from "@/components/TitleHero";
 
 export default function Home() {
-    const animationRef = useRef();
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (animationRef.current) {
-                const { offsetTop } = animationRef.current;
-                if (window.scrollY >= offsetTop - 600) {
-                    animationRef.current.classList.add(
-                        "opacity-100",
-                        "translate-y-[0px]"
-                    );
-                }
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
     return (
         <main>
             <div className="overflow-hidden">
                 <HeroImg />
                 <div className="max-w-[1380px] mx-auto px-[30px]">
                     <div className="flex flex-col items-center lg:flex-row mt-[80px] gap-[70px]">
-                        <div
-                            className="text-center opacity-0 transition duration-1000 translate-y-[100px]"
-                            ref={animationRef}>
-                            <h1 className="text-[40px] font-semibold mb-5">
-                                مركز النخبة لطب وتقويم الأسنان
-                            </h1>
-                            <p className="text-[20px] leading-9">
-                                مركز النخبة لطب وتقويم الأسنان هو مركز رائد في
-                                مجال الرعاية الصحية الفموية والأسنان، والذي يقدم
-                                خدمات متكاملة وعالية الجودة في مدينة الزقازيق.
-                                يعتبر مركز النخبة مكانًا متخصصًا للعناية بصحة
-                                وجمال الأسنان، حيث يتضمن فريقًا مؤهلاً من
-                                الأطباء والمتخصصين في مجالات متعددة مثل طب
-                                الأسنان العام، و طب اسنان الاطفال، وتقويم
-                                الأسنان.
-                            </p>
-                        </div>
+                        <TitleHero />
                     </div>
                 </div>
                 <div className="bg-blue-100 my-[80px]">
