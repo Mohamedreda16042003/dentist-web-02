@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="flex justify-between pr-[40px] mx-auto items-center">
                 <div className="logo w-[200px] h-[80px] flex justify-center">
                     <Link href="/">
-                        <Image src="/logo.png" width={80} height={80} />
+                        <Image src="/logo.png" width={80} height={80} alt="" />
                     </Link>
                 </div>
                 <ul className="font-semibold flex gap-10">

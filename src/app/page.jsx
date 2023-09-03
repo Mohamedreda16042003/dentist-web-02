@@ -1,19 +1,15 @@
 import Image from "next/image";
-import heroImg from "../../public/hero.jpg";
+
+import HeroImg from "@/components/HeroImg";
 
 export default function Home() {
     return (
         <main>
-            <div className="">
-                <div className="">
-                    <Image
-                        src={heroImg}
-                        className="w-[100%] object-cover h-[92vh]"
-                    />
-                </div>
+            <div className="overflow-hidden">
+                <HeroImg />
                 <div className="max-w-[1380px] mx-auto px-[30px]">
                     <div className="flex flex-col items-center lg:flex-row mt-[80px] gap-[70px]">
-                        <div className="text-start">
+                        <div className="text-center">
                             <h1 className="text-[40px] font-semibold mb-5">
                                 مركز النخبة لطب وتقويم الأسنان
                             </h1>
@@ -27,14 +23,6 @@ export default function Home() {
                                 الأسنان العام، و طب اسنان الاطفال، وتقويم
                                 الأسنان.
                             </p>
-                        </div>
-                        <div className="w-[95%] lg:w-auto">
-                            <iframe
-                                className="rounded-xl h-[300px] w-full lg:w-[600px] lg:h-[340px]"
-                                src="https://www.youtube.com/embed/ghNnN3Pj1Ak?si=uQ-itsP3UtcH21E1"
-                                title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
