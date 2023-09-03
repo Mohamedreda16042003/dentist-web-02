@@ -14,7 +14,7 @@ const HeroImg = () => {
                 ref={imgAnimation}
                 src={heroImg}
                 alt=""
-                className="w-[100%] object-cover h-[92vh] -translate-x-[100%] transition duration-700 opacity-0"
+                className="w-[100%] object-cover h-[92vh] -translate-x-[100%] transition duration-1000 opacity-0"
             />
         </div>
     );

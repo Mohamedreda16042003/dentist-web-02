@@ -1,15 +1,27 @@
+"use client";
 import Image from "next/image";
-
 import HeroImg from "@/components/HeroImg";
+import { useRef } from "react";
 
 export default function Home() {
+    const animation = useRef();
+
+    window.onscroll = () => {
+        if (window.scrollY >= animation.current.offsetTop - 600) {
+            animation.current.classList.add("opacity-100", "translate-y-0");
+            console.log(animation);
+        }
+    };
+
     return (
         <main>
             <div className="overflow-hidden">
                 <HeroImg />
                 <div className="max-w-[1380px] mx-auto px-[30px]">
                     <div className="flex flex-col items-center lg:flex-row mt-[80px] gap-[70px]">
-                        <div className="text-center">
+                        <div
+                            className="text-center opacity-0 transition duration-1000 translate-y-[100px]"
+                            ref={animation}>
                             <h1 className="text-[40px] font-semibold mb-5">
                                 مركز النخبة لطب وتقويم الأسنان
                             </h1>
