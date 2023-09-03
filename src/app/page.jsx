@@ -1,17 +1,30 @@
 "use client";
 import Image from "next/image";
 import HeroImg from "@/components/HeroImg";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
-    const animation = useRef();
+    const animationRef = useRef();
 
-    window.onscroll = () => {
-        if (window.scrollY >= animation.current.offsetTop - 600) {
-            animation.current.classList.add("opacity-100", "translate-y-0");
-            console.log(animation);
-        }
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            if (animationRef.current) {
+                const { offsetTop } = animationRef.current;
+                if (window.scrollY >= offsetTop - 600) {
+                    animationRef.current.classList.add(
+                        "opacity-100",
+                        "translate-y-[0px]"
+                    );
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <main>
@@ -21,7 +34,7 @@ export default function Home() {
                     <div className="flex flex-col items-center lg:flex-row mt-[80px] gap-[70px]">
                         <div
                             className="text-center opacity-0 transition duration-1000 translate-y-[100px]"
-                            ref={animation}>
+                            ref={animationRef}>
                             <h1 className="text-[40px] font-semibold mb-5">
                                 مركز النخبة لطب وتقويم الأسنان
                             </h1>
