@@ -2,7 +2,6 @@
 import heroImg from "../../public/hero.jpg";
 import Image from "next/image";
 import { AnimatePresence, useInView } from "framer-motion";
-
 import { useRef } from "react";
 
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
                                 ref={ref}
                                 className={`text-center opacity-0 translate-y-[100px] transition duration-700 ${
                                     inView
-                                        ? "opacity-100 -translate-y-[0px]"
+                                        ? "opacity-100 translate-y-[0px]"
                                         : ""
                                 }`}>
                                 <h1 className="text-[40px] font-semibold mb-5">
@@ -59,7 +58,7 @@ export default function Home() {
                                         ref={ref2}
                                         className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 ${
                                             inView2
-                                                ? "opacity-100 -translate-y-[0px]"
+                                                ? "opacity-100 translate-y-[0px]"
                                                 : ""
                                         }`}>
                                         <h3 className="font-semibold text-[20px] mb-2">
@@ -76,7 +75,7 @@ export default function Home() {
                                     <div
                                         className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-100 ${
                                             inView2
-                                                ? "opacity-100 -translate-y-[0px]"
+                                                ? "opacity-100 translate-y-[0px]"
                                                 : ""
                                         }`}>
                                         <h3 className="font-semibold text-[20px] mb-2">
@@ -92,7 +91,7 @@ export default function Home() {
                                     <div
                                         className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-150 ${
                                             inView2
-                                                ? "opacity-100 -translate-y-[0px]"
+                                                ? "opacity-100 translate-y-[0px]"
                                                 : ""
                                         }`}>
                                         <h3 className="font-semibold text-[20px] mb-2">
@@ -108,7 +107,7 @@ export default function Home() {
                                     <div
                                         className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-200 ${
                                             inView2
-                                                ? "opacity-100 -translate-y-[0px]"
+                                                ? "opacity-100 translate-y-[0px]"
                                                 : ""
                                         }`}>
                                         <h3 className="font-semibold text-[20px] mb-2">
@@ -125,7 +124,7 @@ export default function Home() {
                                     <div
                                         className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-300 ${
                                             inView2
-                                                ? "opacity-100 -translate-y-[0px]"
+                                                ? "opacity-100 translate-y-[0px]"
                                                 : ""
                                         }`}>
                                         <h3 className="font-semibold text-[20px] mb-2">
@@ -141,7 +140,7 @@ export default function Home() {
                                     <div
                                         className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-500 ${
                                             inView2
-                                                ? "opacity-100 -translate-y-[0px]"
+                                                ? "opacity-100 translate-y-[0px]"
                                                 : ""
                                         }`}>
                                         <h3 className="font-semibold text-[20px] mb-2">
