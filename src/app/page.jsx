@@ -56,11 +56,13 @@ export default function Home() {
                                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
                                     <div
                                         ref={ref2}
-                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 ${
-                                            inView2
-                                                ? "opacity-100 translate-y-[0px]"
-                                                : ""
-                                        }`}>
+                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500`}
+                                        style={{
+                                            opacity: inView2 ? 1 : 0,
+                                            transform: inView2
+                                                ? "translateY(0)"
+                                                : "",
+                                        }}>
                                         <h3 className="font-semibold text-[20px] mb-2">
                                             زراعة الأسنان
                                         </h3>
@@ -73,11 +75,13 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div
-                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-100 ${
-                                            inView2
-                                                ? "opacity-100 translate-y-[0px]"
-                                                : ""
-                                        }`}>
+                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-100`}
+                                        style={{
+                                            opacity: inView2 ? 1 : 0,
+                                            transform: inView2
+                                                ? "translateY(0)"
+                                                : "",
+                                        }}>
                                         <h3 className="font-semibold text-[20px] mb-2">
                                             تجميل الأسنان
                                         </h3>
@@ -89,11 +93,13 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div
-                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-150 ${
-                                            inView2
-                                                ? "opacity-100 translate-y-[0px]"
-                                                : ""
-                                        }`}>
+                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-150`}
+                                        style={{
+                                            opacity: inView2 ? 1 : 0,
+                                            transform: inView2
+                                                ? "translateY(0)"
+                                                : "",
+                                        }}>
                                         <h3 className="font-semibold text-[20px] mb-2">
                                             علاج جذور الأسنان
                                         </h3>
@@ -105,11 +111,13 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div
-                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-200 ${
-                                            inView2
-                                                ? "opacity-100 translate-y-[0px]"
-                                                : ""
-                                        }`}>
+                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-200`}
+                                        style={{
+                                            opacity: inView2 ? 1 : 0,
+                                            transform: inView2
+                                                ? "translateY(0)"
+                                                : "",
+                                        }}>
                                         <h3 className="font-semibold text-[20px] mb-2">
                                             التركيبات الثابتة
                                         </h3>
@@ -122,11 +130,13 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div
-                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-300 ${
-                                            inView2
-                                                ? "opacity-100 translate-y-[0px]"
-                                                : ""
-                                        }`}>
+                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-300`}
+                                        style={{
+                                            opacity: inView2 ? 1 : 0,
+                                            transform: inView2
+                                                ? "translateY(0)"
+                                                : "",
+                                        }}>
                                         <h3 className="font-semibold text-[20px] mb-2">
                                             تقويم الأسنان
                                         </h3>
@@ -138,11 +148,13 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div
-                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-500 ${
-                                            inView2
-                                                ? "opacity-100 translate-y-[0px]"
-                                                : ""
-                                        }`}>
+                                        className={`p-[25px] bg-white rounded-md opacity-0 translate-y-[100px] transition duration-500 delay-500`}
+                                        style={{
+                                            opacity: inView2 ? 1 : 0,
+                                            transform: inView2
+                                                ? "translateY(0)"
+                                                : "",
+                                        }}>
                                         <h3 className="font-semibold text-[20px] mb-2">
                                             طب أسنان الأطفال
                                         </h3>
