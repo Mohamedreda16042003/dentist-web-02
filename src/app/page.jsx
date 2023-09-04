@@ -26,11 +26,11 @@ export default function Home() {
                         <div className="flex flex-col items-center lg:flex-row mt-[80px] gap-[70px]">
                             <div
                                 ref={ref}
-                                className={`text-center opacity-0 translate-y-[100px] transition duration-700 ${
-                                    inView
-                                        ? "opacity-100 translate-y-[0px]"
-                                        : ""
-                                }`}>
+                                className={`text-center opacity-0 translate-y-[100px] transition duration-700`}
+                                style={{
+                                    opacity: inView ? 1 : 0,
+                                    transform: inView ? "translateY(0)" : "",
+                                }}>
                                 <h1 className="text-[40px] font-semibold mb-5">
                                     مركز النخبة لطب وتقويم الأسنان
                                 </h1>
